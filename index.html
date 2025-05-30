@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/img/4geeks.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Rigo a Vanilla.js</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+  <body>
+<!-- boton generador de dominios en consola -->
+    <div class="container text-center">
+        <h1 class="mb-4">Opcion 1</h1>
+        <button id="BtnConsola" class="btn btn-primary btn-lg">
+            Mostrar en Consola todos los Dominios
+        </button>
+    </div>
+
+<!-- boton generador de dominios al pulsar -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="mb-4">Opcion 2</h1>
+                <button id="BtnTodos" class="btn btn-primary btn-lg mb-4">
+                    Generar todos los Dominios
+                </button>
+                
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Combinaciones</h5>
+                    </div>
+                    <ul id="combinaciones" class="list-unstyled"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- boton generador de dominios de a uno  -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="mb-4">Opcion 3</h1>
+                <button id="BtnUno" class="btn btn-primary btn-lg mb-4">
+                    Generar un dominio
+                </button>
+                
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Combinacion</h5>
+                    </div>
+                    <div id="combinacion" class="card-body text-start"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Aparecen todos los dominios directamente -->
+    <div class="text-center">
+      <ul id="url" class="list-unstyled"> </ul>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
